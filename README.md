@@ -1,74 +1,51 @@
 # Nginx for DevOps and Cloud Engineers
 
-A practical guide to Nginx configuration and deployment for DevOps and Cloud Engineering workflows. Focus on real-world scenarios, automation, and production deployments.
+A practical guide to Nginx configuration and deployment for DevOps and Cloud Engineering workflows.
 
-## What You'll Learn
+## Current Status
 
-### Core Concepts
-- Nginx installation across different platforms
-- Basic to advanced configuration patterns
-- SSL/TLS certificate management
-- Reverse proxy configurations
-- Load balancing strategies
-
-### DevOps Focus Areas
-- Infrastructure as Code configurations
-- Container deployments (Docker/Kubernetes)
-- CI/CD pipeline integration
-- Monitoring and logging setup
-- Security hardening for production
-
-### Cloud Engineering Applications
-- AWS/GCP/Azure deployment patterns
-- Auto-scaling configurations
-- CDN integration
-- Multi-region setups
-- Cost optimization strategies
+-  AWS EC2 Installation Guide
+-  Basic Production Configuration
+-  Reverse Proxy Setup
+-  Installation Automation Script
+-  Static Website Example
+-  Troubleshooting Guide
+-  SSL/HTTPS Configuration (Coming Soon)
+-  Load Balancing Setup (Coming Soon)
+-  Microservices Example (Coming Soon)
 
 ## Quick Start
 
-1. **Choose Your Platform**
-   - [AWS EC2 Setup](installation/aws-ec2.md)
-   - [Ubuntu/Debian Installation](installation/ubuntu-debian.md)
-   - [CentOS/RHEL Installation](installation/centos-rhel.md)
+1. **Install Nginx on AWS EC2**: Follow [AWS EC2 Setup](installation/aws-ec2.md)
+2. **Use Basic Configuration**: Check [Basic Config](configurations/basic/)
+3. **Set up Reverse Proxy**: See [Reverse Proxy](configurations/reverse-proxy/)
+4. **Automate Installation**: Use [install script](scripts/install-nginx.sh)
 
-2. **Basic Configuration**
-   - Start with [Basic Nginx Configuration](configurations/basic/)
-   - Set up [SSL/HTTPS](configurations/ssl-https/)
+## What's Working Now
 
-3. **Production Scenarios**
-   - [Reverse Proxy Setup](configurations/reverse-proxy/)
-   - [Load Balancing](configurations/load-balancing/)
-   - [Production Hardening](configurations/production/)
+- Complete AWS EC2 installation guide
+- Production-ready nginx.conf template
+- Node.js reverse proxy configuration
+- Automated installation script
+- Static website example
+- Basic troubleshooting guide
 
-## Repository Structure
+## Next Steps
 
-### `/installation/`
-Platform-specific installation guides optimized for cloud environments and automation.
+- SSL/HTTPS with Let's Encrypt
+- Load balancing configuration
+- Microservices API gateway example
+- Container deployment examples
 
-### `/configurations/`
-Production-ready configuration files organized by use case.
+## Quick Test
 
-### `/scripts/`
-Automation scripts for deployment pipelines and infrastructure management.
+```bash
+# Clone and test
+git clone your-repo-url
+cd nginx-devops
 
-### `/examples/`
-Complete working examples for common DevOps scenarios.
+# Run installation (on Ubuntu/EC2)
+sudo ./scripts/install-nginx.sh
 
-### `/troubleshooting/`
-Practical debugging guides for production issues.
-
-## Prerequisites
-
-- Basic understanding of web servers and HTTP
-- Command line proficiency (Linux/Unix)
-- Familiarity with cloud platforms
-- Basic networking knowledge
-
-## Contributing
-
-Contributions focused on DevOps and Cloud Engineering use cases are welcome.
-
-## License
-
-MIT License
+# Deploy static example
+sudo cp examples/static-website/* /var/www/html/
